@@ -15,6 +15,18 @@
     <input type="button" onclick="resolveForm()" value="Get values from form">
 </form>
 
+<form id="authorForm">
+    <label for="secretAuthor">The hidden author name:</label>
+    <input type="password" id="secretAuthor" value="Dickens">
+    
+    <label for="guessAuthor">Guess the author:</label>
+    <input type="text" id="guessAuthor">
+    
+    <button type="button" onclick="checkAuthor()">Check the guess</button>
+    
+    <p id="result"></p>
+
+</form>
 
 <p id="result">This text will be replaced </p>
 
@@ -34,19 +46,6 @@ function resolveForm (){
     }
 }
 </script>
-
-<form id="authorForm">
-    <label for="secretAuthor">The hidden author name:</label>
-    <input type="password" id="secretAuthor" value="Dickens">
-    
-    <label for="guessAuthor">Guess the author:</label>
-    <input type="text" id="guessAuthor">
-    
-    <button type="button" onclick="checkAuthor()">Check the guess</button>
-    
-    <p id="result"></p>
-
-</form>
 <script>
     var good = 0;
     var oops = 0;
